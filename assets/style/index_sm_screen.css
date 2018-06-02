@@ -5,8 +5,26 @@
     display:flex;
     justify-content:center;
 }
+.labels{
+    /* background-color: red; */
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: crime;
+    font-size: 30px;
+    color:#630480;
+}
+.space{
+    color: rgba(0, 0, 0, 0);
+}
 .section_tiles_wrap{
     width: 95%;
+}
+marquee{
+    width: 300px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 150px;
 }
 .tile_row_1pr{
     column-gap: 40px;
