@@ -1,0 +1,96 @@
+@media only screen 
+and (min-width: 0px) 
+and (max-width:644px){
+    .title h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        width: 250px;
+        position: absolute;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#EF7F2E 0,#EF7F2E 110px,#EF7F2E 0,#EF7F2E);
+        color: white;
+        text-shadow: 4px 4px #630480;
+        transform: rotate(355deg);
+        font-family: flaming;
+        font-size: 30px;
+        box-shadow: 1px 2px 10px 0px white;
+        transition: box-shadow 0.5s;
+    }
+}
+@media only screen 
+and (min-width: 645px) 
+and (max-width:850px){
+    .title h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        width: 350px;
+        position: absolute;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#EF7F2E 0,#EF7F2E 110px,#EF7F2E 0,#EF7F2E);
+        color: white;
+        text-shadow: 4px 4px #630480;
+        transform: rotate(352deg);
+        font-family: flaming;
+        font-size: 40px;
+        box-shadow: 1px 2px 10px 0px white;
+        transition: box-shadow 0.5s;
+    }
+}
+@media only screen 
+and (min-width: 851px) and (max-width:1195px) {
+    .title h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 400px;
+        position: absolute;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#EF7F2E 0,#EF7F2E 110px,#EF7F2E 0,#EF7F2E);
+        color: white;
+        text-shadow: 4px 4px #630480;
+        transform: rotate(355deg);
+        font-family: flaming;
+        font-size: 40px;
+        box-shadow: 1px 2px 10px 0px white;
+        transition: box-shadow 0.5s;
+        
+    }
+    .filter{
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* background-color: white; */
+    }
+    .drop-icon{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 5px;
+        background: #EF7F2E url(../feather/chevron-down.svg) no-repeat 95% 55%;
+    }
+    .filter form{
+        text-align: right;
+        width: 100%;
+    }
+    .filter-elements{
+        
+        height: 30px;
+        /* min-width: 200px; */
+        margin: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 20%;
+        cursor: pointer;
+        border-radius: 4px;
+        outline: none;
+        border:1px solid #EF7F2E;
+        color: white;
+        background-color: #EF7F2E;
+        /* width: 100px; */
+    } 
+}

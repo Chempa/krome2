@@ -1,3 +1,312 @@
 @media only screen and (min-width: 1196px){
+    @font-face{
+        font-family: 'flaming';
+        src:url(../fonts/charbb_reg.ttf) format('truetype');
+    }
+    @font-face{
+        font-family: 'official';
+        src:url('../fonts/Champagne & Limousines Bold.ttf') format('truetype');
+    }
+    @font-face{
+        font-family: 'Genericons';
+        src: url('../genericons/genericons-regular-webfont.woff')format('woff'),url('../genericons/genericons-regular-webfont.eot')format('truetype')
+    }
+    @font-face{
+        font-family: crime;
+        src: url('../fonts/Crimes Times Six.ttf') format('truetype');
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: official;
+        font-size: 16px;
+    }
+    body{
+        background-color:rgba(0,0,0,0.2);
+        z-index: -1000;
+    }
+    .wrapper{
+        width: 90%;
+        position: relative;
+        margin: auto;
+    }
+    .header{
+        height: auto;
+        background-color: #630480;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#630480 0,#630480 110px,#630480 0,#630480);
+    }
+    .title{
+        width: 100%;
+        height: auto;
+        height: 50px;
+    }
+    .title h1{
+        margin-top: 5px;
+        margin-left: -15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 400px;
+        position: absolute;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#EF7F2E 0,#EF7F2E 110px,#EF7F2E 0,#EF7F2E);
+        color: white;
+        text-shadow: 4px 4px #630480;
+        transform: rotate(350deg);
+        font-family: flaming;
+        font-size: 50px;
+        box-shadow: 1px 2px 10px 0px white;
+        transition: box-shadow 0.5s;
+    }
+    #brand:hover{
+        box-shadow: 1px 2px 30px 0px white;
+    }
+    .search-div{
+        float: right;
+        margin-top: 10px;
+        margin-right: 35px;
+        position: relative;
+        display: flex;
+        justify-content: center;
     
+    }
+    .search-div input{
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        width:300px;
+        outline: none;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    .search-div button{
+        /* position: relative; */
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        width:30px;
+        outline: none;
+        border: none;
+        margin-left: -6px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        cursor: pointer;
+        background-color: #EF7F2E;
+    }
+    .search-div img{
+        /* height: 20px; */
+    }
+    .navigations{
+        /* background-color: aquamarine; */
+        height: 50px;
+    }
+    .navigations ul{
+        padding-top: 10px;
+        height: 30px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        padding-left: 40%;
+        padding-right: 35px;
+    }
+    .navigations ul li{
+        display: inline;
+    }
+    .navigations a{
+        color: white;
+    }
+    .create{
+        border: 1px solid #EF7F2E;
+        background-color: #EF7F2E;
+        color: #630480;
+        padding: 7px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    .filter{
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* background-color: white; */
+    }
+    .drop-icon{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 5px;
+        background: #EF7F2E url(../feather/chevron-down.svg) no-repeat 95% 55%;
+    }
+    .filter form{
+        text-align: right;
+        margin-right: 26px;
+    }
+    .filter-elements{
+        height: 30px;
+        min-width: 200px;
+        margin-right: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        outline: none;
+        border:1px solid #EF7F2E;
+        color: white;
+        background-color: #EF7F2E;
+    }
+    .workarea{
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
+        border-top: 2px solid #630480;
+        /* background-color: #bdb3c0; */
+        /* display: none; */
+    }
+    .base{
+        width:100%;
+        min-height: 240px;
+        background-color: rgba(0,0,0,0.1);
+        position: relative;
+    }
+    
+    ._accordion{
+        /* background:  url("../img/l.png") no-repeat 75% 55%; */
+        width: auto;
+        /* min-width: 800px; */
+        display: block;
+        list-style-type: none;
+        overflow: visible;
+        height: 200px;
+        font-size: 0;
+        margin-left: 20px;
+        position: absolute;
+        top: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .tab{
+        display: inline-block;
+        background-color: rgba(0,0,0,0.1);
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,rgba(0,0,0,0.1) 0,rgba(0,0,0,0.1) 119px,rgba(0,0,0,0.1) 0,rgba(0,0,0,0.1));
+        border-right:rgba(0,0,0,0.1) solid 2px;
+        width: 80px;
+        height:  200px;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        transition:all 0.5s ease-in-out 0.1s;
+    }
+    .tab:hover{
+        width: 450px
+    }
+    .tab:hover .social a::before{
+        margin-left: -100px;
+    }
+    .tab:hover .social a::after{
+        margin-left: -5px;
+    }
+    .tab .content{
+        background: #fff;
+        width: 360px;
+        height: 200px;
+        margin-left: 80px;
+        position: relative;
+        padding: 50px 0 0 15px;
+        text-align: center;
+    }
+    .tab .content h1{
+        font-size: 2.5rem;
+    }
+    .tab .content p{
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+        padding-right: 30px;
+    }
+    
+    .social a::before,
+    .social a::after{
+        transition: all 0.4s ease-in-out 0.1s;
+        width: 80px;
+        height: 200px;
+        position: absolute;
+        text-indent: 0;
+        padding-top: 90px;
+        padding-left: 25px;
+        display: block;
+        font:normal 30px Genericons;
+        color: white;
+        
+    }
+    
+    .social a::after{
+        font-size: 48px;
+        padding-left: 20;
+        padding-top: 80px;
+        margin-left: 85px;
+    }
+    /* add icons */
+    .youtube a::before,
+    .youtube a::after{
+        content: '\f213';
+    }
+    .youtube a::after{
+        background-color: #ff0000;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,#ff0000 0,#ff0000 119px,#ff0000 0,#ff0000);
+    }
+    .twitter a::before,
+    .twitter a::after{
+        content: '\f202';
+    }
+    .twitter a::after{
+        background-color: #6dc5dd;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,#6dc5dd 0,#6dc5dd 119px,#6dc5dd 0,#6dc5dd);
+    }
+    .facebook a::before,
+    .facebook a::after{
+        content: '\f203';
+    }
+    .facebook a::after{
+        background-color: #3b5998;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,#3b5998 0,#3b5998 119px,#3b5998 0,#3b5998);
+    }
+    .linkedin a::before,
+    .linkedin a::after{
+        content: '\f208';
+    }
+    .linkedin a::after{
+        background-color: #00a9cd;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,#00a9cd 0,#00a9cd 119px,#00a9cd 0,#00a9cd);
+    }
+    .instagram a::before,
+    .instagram a::after{
+        content: '\f215';
+    }
+    .instagram a::after{
+        background-color: #6dc993;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,#6dc993 0,#6dc993 119px,#6dc993 0,#6dc993);
+    }
+    .github a::before,
+    .github a::after{
+        content: '\f200';
+    }
+    .github a::after{
+        background-color: #6e5494;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 66%),linear-gradient(90deg,#6e5494 0,#6e5494 119px,#6e5494 0,#6e5494);
+    }
+    .footer a{
+        color: #6e5494;
+        text-decoration: none;
+    }
+    .footer{
+        color:#6e5494;
+    }
+    .ft{
+         margin: 20px;
+         margin-top: 50px;
+        float: right;
+    }
+    .ft h6{
+        font-family: crime;
+        font-size: 26px;
+    }
 } 
