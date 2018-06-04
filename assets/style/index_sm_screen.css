@@ -4,7 +4,7 @@
     /* background-color: aquamarine; */
     display:flex;
     justify-content:center;
-}
+} 
 .labels{
     /* background-color: red; */
     display: inline-block;
@@ -97,21 +97,31 @@ marquee{
     /* float: left; */
 }
 
-.content_h,.content_v{
-    /* background-color: aqua; */
-    margin: 0;
-    width: 100%;
+.content_v{
+    position: relative;
+    text-align: center;
+    color: black;
+    /* background-color: yellow; */
+    background-color: white;
+    padding-top: 25px;
     height: 30%;
-    overflow: hidden;
+    margin-left: 0;
+}
+.content_h{
+    position: relative;
+    padding-top: 25px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    height: 30%;
+    
+}
+.content_v p{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    /* padding: 5px; */
-    line-height: 17px;
-    background-color: white;
-    /* float: left; */
+    font: normal 20px 'Cookie', cursive;
+    
 }
 .im_h,.im_v{
     position: absolute;
@@ -120,8 +130,6 @@ marquee{
     object-fit: cover;
 }
 .event-title{
-    font-weight: bold;
-    font-size: 20px;
 }
 .skipper1{
     display: inline-block;
