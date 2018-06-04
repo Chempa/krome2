@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0.2);
     z-index: -1000;
 }
 #mobile-navigation{
@@ -222,7 +222,6 @@ and (max-width:644px){
     }
     .workarea{
         width: 100%;
-        background-color: rgba(0,0,0,0.1);
         border-top: 2px solid #630480;
         /* background-color: #bdb3c0; */
         /* display: none; */
