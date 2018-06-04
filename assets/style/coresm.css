@@ -48,9 +48,10 @@ and (min-width: 0px)
 and (max-width:644px){
    
     .wrapper{
-        width: 98%;
+        width: 100%;
         position: relative;
         margin: auto;
+        overflow: hidden;
     }
     .header{
         height: auto;
