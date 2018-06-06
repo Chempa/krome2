@@ -17,22 +17,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/index_lg_screen.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/index_xlg_screen.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <link href="./assets/style/landing.css" rel="stylesheet">
-    <style>
-        body,.footer-distributed{
-            background-color: #630480;
-        }
-        .header{
-            height: 100vh;
-        }
-    </style>
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 <body>
 </body>
-    <script>
-        
-    </script>
     <div class="wrapper">
         <div class="header">
             <div class="title">
@@ -42,7 +30,7 @@
                             <div class="m-navigations">
                                 <ul>
                                     <li><a class="underline" href="Nav">Home</a></li>
-                                    <li><a class="underline" href="./browse.html">Events</a></li>
+                                    <li><a class="underline" href="Nav">Events</a></li>
                                     <li><a class="underline" href="Nav">Recent posts</a></li>
                                     <li><a class="underline" href="Nav">Log in</a></li>
                                     <li><a class="underline" href="Nav">Join us</a></li>
@@ -55,69 +43,81 @@
                     <input type="text" placeholder="search"/>
                     <button><img src="./assets/feather/search.svg"></button>
                 </div>
+                
+                
+                
             </div>
             <div class="navigations">
                 <ul>
                     <li><a href="Nav">Home</a></li>
-                    <li><a href="./browse.html">Events</a></li>
+                    <li><a href="Nav">Events</a></li>
                     <li><a href="Nav">Recent posts</a></li>
                     <li><a href="Nav">Log in</a></li>
                     <li><a href="Nav">Join us</a></li>
                     <li><a href="Nav" class="create">Create Event</a></li>
                 </ul>
             </div>
-        <div id="land-text">
-            <h1 id="welcome">Welcome to KromEvents</h1>
-            <p id="welcome-message">We've got all your event right Here!!!</p>
-            <p id="welcome-btn"><span>Click <a href="./browse.html" class="browse-events">Here</a> to browse our events</span></p>
-            <a href="#featured" id="arrow"><img src="./assets/feather/arrow-down.svg"/></a>
         </div>
-        
-        <div id="workarea" class="workarea">
-            <div class="card-wrap">
-                <div id="l-card-1" class="l-card"></div>
-                <div id="l-card-2" class="l-card"></div>
-                <div id="l-card-3" class="l-card"></div>
-            </div>
+        <div class="filter">
+            <form action="">
+                <select name="Category" class="filter-elements drop-icon">
+                    <option value="Null" selected>--Category</option>
+                    <option value="Theatre">Theatre</option>
+                    <option value="Party">Party</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Science &amp; Technology">Science &amp; Technology</option>
+                    <option value="Business">Business</option>
+                    <option value="Church">Church</option>
+                    <option value="Business &amp; Professional">Business &amp; Professional</option>
+                    <option value="School Activities">School Activities</option>
+                    <option value="Music">Music</option>
+                    <option value="Community &amp; Culture">Community &amp; Culture</option>
+                    <option value="All">All</option>
+                </select>
+
+                <select name="Date" class="filter-elements drop-icon">
+                    <option value="Null" selected>--Date</option>
+                    <option value="Today">Today</option>
+                    <option value="Tomorrow">Tomorrow</option>
+                    <option value="This Week">This Week</option>
+                    <option value="This Weekend">This Weekend</option>
+                    <option value="Next Week">Next Week</option>
+                    <option value="This Month">This Month</option>
+                    <option value="All">All</option>
+                </select>
+                
+                <select name="Price" class="filter-elements drop-icon">
+                    <option value="Null" selected>--Price</option>
+                    <option value="paid">Paid</option>
+                    <option value="Free">Free</option>
+                    <option value="All">All</option>
+                </select>
+                <select name="Location" class="filter-elements drop-icon">
+                    <option value="Null" selected>--Location</option>
+                    <option value="Accra">Accra</option>
+                    <option value="Kumasi">Kumasi</option>
+                    <option value="Lapaz">Lapaz</option>
+                    <option value="All">All</option>
+                </select>
+                <div class="mobile-search-div">
+                    <input type="text" placeholder="search"/>
+                    <button><img src="./assets/feather/search.svg"></button>
+                </div>
+            </form>
         </div>
-        </div>
-        <div id="featured" class="land-site">
-            <h1  class="label">Featured Events</h1>
+        <div class="workarea">
+                <!-- <h1 class="labels">E v e n t s <span class="space">..........</span> <marquee>We have all your events Here for you</marquee></h1> -->
             <div class="site_section">
                 <div class="section_tiles_wrap">
-                    <div class="tile_row_3pr tile_row_3pr_noexpand">
-                        <div class="tile_items_3 ">
+                    <div class="tile_row_1pr">
+                        <div class="tile_items_1">
                             
-                            <div class="image-box image_h">
+                            <div class="image-box image_v">
                                 <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
-                            </div>
-                            <div class="content_h">
+                            </div>  
+                            <div class="content_v">
                                 <a class="item_link" href="detail.html"></a>
                                 <h4 class="event-title">Urantia Ghana Internation Conference</h4>
-                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
-                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
-                            </div>
-                        </div>
-                        <div class="tile_items_3 ">
-                            
-                            <div class="image-box image_h">
-                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
-                            </div>
-                            <div class="content_h">
-                                <a class="item_link" href="detail.html"></a>
-                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
-                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
-                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
-                            </div>
-                        </div>
-                        <div class="tile_items_3 skipper1">
-                            
-                            <div class="image-box image_h">
-                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
-                            </div>
-                            <div class="content_h">
-                                <a class="item_link" href="detail.html"></a>
-                                <h4 class="event-title">CONS</h4>
                                 <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
                                 <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
                             </div>
@@ -156,6 +156,96 @@
                             <div class="content_h">
                                 <a class="item_link" href="detail.html"></a>
                                 <h4 class="event-title">CONS</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile_row_3pr tile_row_3pr_expand">
+                        <div class="tile_items_2  skipper2 pad_down">
+                            
+                            <div class="image-box image_h">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_h">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">CONS</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                        <div class="tile_items_3 ">
+                            
+                            <div class="image-box image_h">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_h">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                        <div class="tile_items_3 pad_down">
+                            
+                            <div class="image-box image_h">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_h">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                        <div class="tile_items_3">
+                            
+                            <div class="image-box image_h">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_h">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile_row_2pr">
+                        <div class="tile_items_2 ">
+                            
+                            <div class="image-box image_h">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_h">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                        <div class="tile_items_2 ">
+                            
+                            <div class="image-box image_h">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_h">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
+                                <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
+                                <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile_row_1pr">
+                        <div class="tile_items_1">
+                            
+                            <div class="image-box image_v">
+                                <div class="image" style="background: url('assets/img/chicago.jpg');background-size: cover;background-position:center;"></div>
+                            </div>
+                            <div class="content_v">
+                                <a class="item_link" href="detail.html"></a>
+                                <h4 class="event-title">Urantia Ghana Internation Conference</h4>
                                 <p><img src="./assets/feather/calendar.svg"/>. Fri, April 20. 17:00</p>
                                 <p><img src="./assets/feather/map-pin.svg"/>. Accra</p>
                             </div>

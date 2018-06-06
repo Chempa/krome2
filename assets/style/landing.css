@@ -1,0 +1,122 @@
+@font-face{
+    font-family: truelies;
+    src: url('../fonts/True Lies.ttf') format('truetype');
+}
+body{
+    overflow-x: hidden;
+}
+.card-wrap{
+    /* background-color: white; */
+    height: 70vh;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    
+    margin-right: 20px;
+}
+.workarea{
+    position: relative;
+    border-top: 0px;
+
+}
+.wrapper{
+    background-color: #5b0375;
+}
+.l-card{
+    width: 90%;
+    height:80%;
+    position: absolute;
+    box-shadow: 2px 2px 12px 0px white;
+
+}
+#l-card-1{
+    background: #EF7F2E url(../img/kids.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(0deg);
+    left: 0;
+    bottom: -40px;
+}
+#l-card-2{
+    background: #EF7F2E url(../img/book.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(4deg);
+    left: 50px;
+    bottom: 0px;
+}
+#l-card-3{
+    /* display: none; */
+    background: #EF7F2E url(../img/chicago.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(8deg);
+    left: 100px;
+    bottom: 40px;
+}
+#land-text{
+    position: relative;
+    float: left;
+    height: 430px;
+    width: 23%;
+    margin-left: 50px;
+    margin-top: 60px;
+    /* background-color: white;   */
+    color: white;
+    text-align: center;  
+}
+#welcome{
+    margin-top: 30px;
+    font: normal 36px 'Cookie', crime;
+
+}
+#welcome-message{
+    margin-top: 40px;
+}
+#welcome-btn{
+    margin-top: 50px;
+}
+#welcome-btn span{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.browse-events{
+    margin: 10px;
+    color: #EF7F2E;
+    text-decoration: none;
+    font-size: 30px;
+}
+#arrow{
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 220px;
+    background-color: #EF7F2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 10px 0px white;
+    margin-left: 120px;
+}
+.land-site{
+    background-color: #5b0375;
+    background-color:rgba(255,255,255,0.8);
+    height: 150vh;
+    margin: 0px;
+}
+.label{
+    font-size: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-family: crime;
+    color: #5b0375;
+
+}

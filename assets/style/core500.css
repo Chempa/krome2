@@ -124,7 +124,7 @@ and (max-width:1195px){
     }
     .navigations a{
         color: white;
-
+        text-decoration: none;
     }
     .create{
         border: 1px solid #EF7F2E;

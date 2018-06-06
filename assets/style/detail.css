@@ -1,0 +1,18 @@
+@font-face{
+    font-family: truelies;
+    src: url('../fonts/True Lies.ttf') format('truetype');
+}
+body{
+    overflow-x: hidden;
+}
+
+.workarea{
+    min-height: 30vh;
+    background-color: white;
+}
+.wrapper{
+    background-color: #5b0375;
+}
+.title,.navigations{
+    background-color: rgba(68, 2, 59,0.4);
+}
